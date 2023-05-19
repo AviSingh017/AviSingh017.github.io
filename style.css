@@ -35,10 +35,112 @@ body{
 section{
     min-height: 100vh;
     padding: 10rem 9% 2rem;
+}
+
+/*New Navbar*/
+#header{
+    padding-top: 1rem;
+}
+
+#header {
+    /* background-image: url(images/developerActivity.svg); */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    padding: 10px 10%;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 9%;
+    z-index: 1;
+    top: 0px;
+    background-color: #080808;
+    /* backdrop-filter: blur(15px);
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0px;
+    background-color: #080808;
+    background: rgba(255,255,255,0.1);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: 0.6s;
+    z-index: 1;
+    backdrop-filter: blur(15px);
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 
 }
 
-.header{
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-family: "montserrat";
+    font-weight: bold
+}
+
+nav ul li a::after {
+
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #f58320;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+#resume-button-1 {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+}
+
+nav .fas {
+    display: none;
+}
+
+#resume-button-2{
+    display: none;
+}
+
+
+/*New Navbar*/
+
+/* .header{
     position: fixed;
     top: 0;
     left: 0;
@@ -78,7 +180,7 @@ section{
     font-size: 2.5rem;
     color: var(--text-color);
     display: none;
-}
+} */
 
 .home{
     display: flex;
@@ -154,7 +256,7 @@ span{
     padding: 1rem 2.8rem;
     background-image: linear-gradient(to right, #fd562c, #f58320);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
+    /* box-shadow: 0 0 1rem var(--main-color); */
     font-size: 1.6rem;
     font-family: montserrat;
     color: var(--text-color);
@@ -163,7 +265,8 @@ span{
 }
 
 .btn:hover{
-    box-shadow: none;
+    box-shadow: 0 0 1rem var(--main-color);
+    /* box-shadow: none; */
 }
 
 
@@ -180,7 +283,7 @@ span{
 .about-img img{
     border-radius: 50%;
     width: 30vw;
-    box-shadow: 0 0 2rem var(--main-color);
+    box-shadow: 0 0 2rem var(--bg-color);
 }
 
 .heading{
@@ -393,6 +496,10 @@ span{
         display: block;
     }
 
+    section {
+        padding: 6rem 3% 2rem;
+    }
+
     .navbar{
         position: absolute;
         top: 100%;
@@ -478,4 +585,71 @@ span{
     text-align: center;
     margin-top: 2rem;
    }
+}
+
+
+
+@media screen and (min-width:280px) and (max-width:600px) {
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #f58320;
+        position: fixed;
+        top: 0px;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (min-width:601px) and (max-width:950px) {
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #f58320;
+        position: fixed;
+        top: 0px;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
 }

@@ -23,7 +23,7 @@
 
   <!-- Navigation Bar -->
 
-  <header class="header">
+  <!-- <header class="header">
     <a href="#" class="logo">
       < Avi<span style="color:#f58320">shek /></span>
     </a>
@@ -39,7 +39,37 @@
       <a href="#contact">Contact</a>
       <a href="#">Resume</a>
     </nav>
-  </header>
+  </header> -->
+
+  <div id="header">
+    <div id="home">
+      <nav id="nav-menu">
+        <a href="#header">
+          <h1 class="logo" style="color: #fff;">
+            < Avi<span>shek /></span>
+          </h1>
+        </a>
+        <ul id="sidemenu">
+          <li><a href="#header" class="nav-link Home">Home</a></li>
+          <li><a href="#about" class="nav-link About">About</a></li>
+          <li><a href="#skills" class="nav-link skills">Skills</a></li>
+          <li><a href="#github">Github</a></li>
+          <li><a href="#portfolio" class="nav-link projects">Projects</a></li>
+          <li><a href="#contact" class="nav-link contact">Contact</a></li>
+          <li>
+            <button id="resume-button-1">
+              <a id="resume-link-1" href="images/Avishek_Singh_Resume.pdf" target="_blank" class="nav-link resume"
+                download>Resume <i class="fa-solid fa-download"></i></a>
+            </button>
+          </li>
+          <i class="fas fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <button id="resume-button-2"><a href="" target="_blank"
+          class="btn" download></a></button>
+    </div>
+  </div>
 
   <!-- Home section -->
 
@@ -61,7 +91,7 @@
           <img src="./images/github.png" alt="">
         </a>
       </div>
-      <a href="#" class="btn">Resume</a>
+      <a href="#" class="btn" id="resume-link-2">Resume</a>
     </div>
 
     <div class="home-img">
@@ -191,6 +221,34 @@
 
   <!-- Custom js file -->
   <script src="index.js"></script>
+  <script>
+
+    /////////////////////////////////////////// Scroll Reveal/////////////////////////
+
+    ScrollReveal({
+      reset: true,
+      distance: '80px',
+      duration: 2000,
+      delay: 200
+    });
+
+    ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+    ScrollReveal().reveal('.home-img, .portfolio-box, contact form', { origin: 'bottom' });
+    ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+    ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+
+    ////////////////////////////////////////// typed js////////////////////////////////////
+
+
+    const typed = new Typed('.multiple-text', {
+      strings: ['Full Stack Developer'],
+      typeSpeed: 70,
+      backSpeed: 70,
+      backDelay: 1000,
+      loop: true
+    });
+  </script>
 </body>
 
 </html>
