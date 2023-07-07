@@ -66,8 +66,7 @@
         </ul>
         <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
-      <button id="resume-button-2"><a href="" target="_blank"
-          class="btn" download></a></button>
+      <button id="resume-button-2"><a href="" target="_blank" class="btn" download></a></button>
     </div>
   </div>
 
@@ -118,6 +117,90 @@
     </div>
   </section>
 
+
+
+  <!-- Skills Section -->
+
+  <section id="skills" class="skills">
+    <div class="nav-link skills" class="max-width">
+      <h2 class="heading">My <span>Skills</span></h2>
+      <div id="skills-part">
+
+        <div class="skills-card">
+          <img class="skills-card-img" alt="HTML" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" />
+          <h3 class="skills-card-name">HTML</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="CSS" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" />
+          <h3 class="skills-card-name">CSS</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="JS"
+            src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" />
+          <h3 class="skills-card-name">JavaScript</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="NODEJS" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" />
+          <h3 class="skills-card-name">Node.js</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="React" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" />
+          <h3 class="skills-card-name">React.js</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="EXPRESS"
+            src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg" />
+          <h3 class="skills-card-name">Express.js</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="SOCKET"
+            src="https://www.vectorlogo.zone/logos/socketio/socketio-ar21.svg" />
+          <h3 class="skills-card-name">socket.io</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="MONGO DB"
+            src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" />
+          <h3 class="skills-card-name">Mongo DB</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="MYSQL" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg" />
+          <h3 class="skills-card-name">MySQL</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="Sequelize"
+            src="https://www.vectorlogo.zone/logos/sequelizejs/sequelizejs-ar21.svg" />
+          <h3 class="skills-card-name">Squelize</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="REDIS" src="https://www.vectorlogo.zone/logos/redis/redis-ar21.svg" />
+          <h3 class="skills-card-name">Redis</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="GH" src="https://www.vectorlogo.zone/logos/github/github-ar21.svg" />
+          <h3 class="skills-card-name">Github</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="GIT" src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" />
+          <h3 class="skills-card-name">Docker</h3>
+        </div>
+
+        <div class="skills-card">
+          <img class="skills-card-img" alt="POSTMAN"
+            src="https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg" />
+          <h3 class="skills-card-name">Postman</h3>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" alt="TS"
+            src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-ar21.svg" />
+          <h3 class="skills-card-name">TypeScript</h3>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </section>
 
 
   <!-- Portfolio Section -->
@@ -180,6 +263,46 @@
       </div>
     </div>
   </section>
+
+
+  <!-- Github Stats-->
+
+  <section id="github" class="github">
+    <h2 class="heading">Github<span>Stats</span></h2><br><br>
+    <div id="stat">
+        <div>
+            <img class="ht1" id="github-stats-card"
+                src='https://github-readme-stats.vercel.app/api?username=avisingh017&count_private=true'>
+        </div>
+        <div>
+            <img class="ht1" id="github-top-langs"
+                src='https://github-readme-stats.vercel.app/api/top-langs/?username=avisingh017&theme=outrun'>
+        </div>
+        <div>
+            <img class="ht1" id="github-streak-stats"
+                src='https://github-readme-streak-stats.herokuapp.com?user=avisingh017&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D'>
+        </div>
+    </div>
+
+    <div class="react-activity-calendar">
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+        <link rel="stylesheet"
+            href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+        <div class="calendar react-activity-calenda">
+            Loading the data just for you.
+        </div>
+
+        <script>
+            GitHubCalendar(".calendar", "avisingh017");
+            // or enable responsive functionality
+            GitHubCalendar(".calendar", "avisingh017", { responsive: true });
+        </script>
+    </div>
+    </div>
+
+    </div>
+</section>
 
 
   <!-- Contact me -->

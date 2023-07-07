@@ -16,7 +16,7 @@
     --bg-color: #080808;
     /* --bg-color: #1f242d; */
     --second-bg-color: #1f242d;
-    /* --second-bg-color: #323948; */
+    --third-bg-color: #323948;
     /* --second-bg-color: #fff; */
     --text-color: #fff;
     --main-color: #f58320;
@@ -306,6 +306,66 @@ span{
 }
 
 
+/************************************SKILLS SECTION***************************/
+
+.skills  .title::after{
+    content: "what i know";
+    background: #e5ecf0;
+}
+
+
+
+#skills-part{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    
+
+}
+.skills-card{
+    /* background-color:crimson; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background: #f58320;
+    padding: 35px 25px;
+    border-radius: 8px;
+    transition: all .45s ease;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+  
+
+}
+.skills-card-img i{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.skills-card h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.skills-card p{
+    color: var(--second-color);
+   
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+.skills-card:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+    /* background-color: crimson; */
+}
+
+
+
 /*********************************** portfolio section *****************************/
 
 .portfolio{
@@ -386,7 +446,50 @@ span{
     color: var(--second-bg-color);
 }
 
+/*****************************************GitHUb Stats******************************/
+
+#stat{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin: auto;
+    width: 85%;
+}
+#stat div {
+     margin-left: 20px;
+     margin-right: 20px;
+}
+#stat div img{
+  
+    width: 100%;
+    margin:auto;
+   
+}
+.github .title::after{
+    content: "My submition";
+   
+}
+.github{
+    background: var(--third-bg-color);
+}
+.github .title::before{
+    background: #fff;
+}
+.cal{
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+.react-activity-calendar{
+    width: 90%;
+    margin: auto;
+}
+
+
+
 /**************************************************Contact******************************/
+
 
 .contact h2{
     margin-bottom: 3rem;
