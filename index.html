@@ -3,750 +3,721 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--==================== FAVICON ====================-->
-    <link rel="icon" href="assets/img/about.png">
-
-    <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-
-    <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!----------------- github calender css ----------->
-    <link rel="stylesheet" href="./css/github_states.css" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cdgco/techfont@latest/dist/techFont.css">
+    <meta name="keywords" content="aman kumar portfolio website java masaischool">
+    <meta name="description" content="aman kumar portfolio website java masaischool">
+    <link rel="icon" href="/images/head-logo.png" type="image/icon type">
 
     <title>Avishek Singh</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/calendar.css" />
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
 
 <body>
-    <!--==================== HEADER ====================-->
-
+    <!-- ========== HEADER ========== -->
     <header class="header" id="header">
         <nav class="nav container">
-
-            <a href="#" class="nav__logo">Avishek Singh</a>
-
-            <div class="nav__menu" id="nav-menu">
-
-                <ul class="nav__list grid">
-
-                    <li class="nav__item ">
-                        <a class="nav__link nav-link home" href="#home">
-                            <i class="uil uil-estate nav__icon"></i>Home</a>
-                    </li>
-
-                    <li class="nav__item ">
-                        <a class="nav__link nav-link about" href="#about ">
-                            <i class="uil uil-user nav__icon"></i>About</a>
-                    </li>
-
-                    <li class="nav__item ">
-                        <a class="nav__link nav-link projects" href="#projects">
-                            <i class="uil uil-file-alt nav__icon"></i>Projects</a>
-                    </li>
-
-                    <li class="nav__item ">
-                        <a class="nav__link nav-link skills" href="#skills">
-                            <i class="uil uil-briefcase-alt nav__icon"></i>Skills</a>
-                    </li>
-
-                    <li class="nav__item ">
-                        <a class="nav__link nav-link contact" href="#contact">
-                            <i class="uil uil-link-alt nav__icon"></i>ContactMe</a>
-                    </li>
-
-                    <li class="nav__item ">
-                        <a href="assets/pdf/Avishek-Singh-Resume.pdf" class="nav__link nav-link resume"
-                            id="resume-link-1" onclick="window.open('assets/pdf/Avishek-Singh-Resume.pdf')"
-                            target="_blank" download>
-                            Resume
+            <a href="" class="nav_logo"><span>Avishek </span>Singh</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link nav-link home active-link">
+                            <i class="uil uil-estate nav_icon"></i> Home
                         </a>
                     </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link nav-link about">
+                            <i class="uil uil-user nav_icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link nav-link skills">
+                            <i class="uil uil-file-alt nav_icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#projects" class="nav_link nav-link projects">
+                            <i class="uil uil-briefcase-alt nav_icon"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#statistics" class="nav_link">
+                            <i class="uil uil-graph-bar nav_icon"></i> Statistics
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link nav-link contact">
+                            <i class="uil uil-message nav_icon"></i> Contact Me
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <button id="resume-button-1" class="nav-link resume">
+                            <a href="assets/pdf/Avishek-Singh-Resume.pdf" class="nav_link"
+                                id="resume-link-1"
+                                onclick="window.open('assets/pdf/Avishek-Singh-Resume.pdf')"
+                                target="_blank" download>
+                                <i class="uil uil-download-alt nav_icon"></i> Resume
+                            </a>
+                        </button>
+                    </li>
                 </ul>
-                <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
+                <i class="uil uil-times nav_close" id="nav-close"></i>
             </div>
 
-            <div class="nav__btns">
+            <div class="nav_btns">
+                <!-- ===== Theme Changer ===== -->
                 <i class="uil uil-moon change-theme" id="theme-button"></i>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps nav__icon"></i>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
                 </div>
             </div>
-
         </nav>
     </header>
 
-    <!--==================== MAIN ====================-->
-    <main class="main">
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__content grid">
-                    <!-- socials -->
-                    <div class="home__social">
-                        <a target="_blank" href="https://www.linkedin.com/in/avishek-singh-007/"
-                            class="home__social-icon">
 
+    <!-- ========== MAIN ========== -->
+    <main class="main">
+
+
+        <!-- ========== Home ========== -->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        <a id="contact-linkedin" href="https://www.linkedin.com/in/avishek-singh-007/" target="_blank"
+                            class="home_social-icon">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
-                        <a target="_blank" href="https://github.com/avisingh017" class="home__social-icon">
+                        <a id="contact-github" href="https://github.com/avisingh017" target="_blank"
+                            class="home_social-icon">
                             <i class="uil uil-github-alt"></i>
-
                         </a>
-                        <a target="_blank" href="https://twitter.com/" class="home__social-icon">
+                        <a id="contact-phone" href="https://twitter.com/Avishek_Singh17" target="_blank"
+                            class="home_social-icon">
                             <i class="uil uil-twitter-alt"></i>
                         </a>
-
                     </div>
-                    <!-- profile image -->
-                    <div class="home__img ">
 
-                        <img src="./assets/img/tp.jpg" class="home-img" style="display:none;" alt="">
-                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                    <div class="home_img">
+                        <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <mask id="mask0" mask-type="alpha">
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                             </mask>
                             <g mask="url(#mask0)">
                                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-
-                                <image class="home__blob-img" href="./assets/img/tp.png" />
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home_blob-img" href="assets/img/tp.png" />
                             </g>
                         </svg>
                     </div>
-                    <!-- summary -->
-                    <div class="home__data">
-                        <h1 id="user-detail-name" class="home__title">Hi, I'm Avishek Singh</h1>
-                        <h3 class="home__subtitle">Full Stack Web Developer</h3>
-                        <p class="home__description">Dedicated Full Stack Developer with a proficiency in JavaScript and
-                            Node.js. Expertise in developing and implementing scalable and secure web applications.
-                        </p>
-                        <a href="#contact" class="button button--flex">
-                            Contact Me <i class="uil uil-comment-alt button__icon"></i>&nbsp&nbsp
-                        </a>
-                    </div>
 
+                    <div class="home_data">
+                        <h1 class="home_title" id="user-detail-name">Hi, I'm<br>Avishek Singh</h1>
+                        <h3 class="home_subtitle"><span class="auto-type"></span></h3>
+                        <p class="home_description">Dedicated Full Stack Developer with a proficiency in MERN Stack and
+                            JavaScript. Expertise in developing and implementing scalable and secure web applications.
+                        </p>
+                        <div class="btn_container">
+                            <a href="#contact" class="button button-flex sec_button">
+                                Connect with Me <i class="uil uil-message button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <!-- div scrolll -->
-                <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button   button--flex">
-                        <!-- <i class="uil uil-direction home__scroll-arrow home__scroll-mouse"></i> -->
-                        <span class="home__scroll-name ">Scroll down</span>
-                        <i class="uil uil-angle-down home__scroll-arrow"></i>
+
+                <div class="home_scroll">
+                    <a href="#about" class="home_scroll-button button-flex">
+                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                        <span class="home_scroll-name">Scroll Down</span>
+                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
                     </a>
                 </div>
             </div>
-        </section> <br><br>
+        </section>
 
-        <!--==================== ABOUT ====================-->
+
+        <hr class="hr_break_line">
+
+
+        <!-- ========== About ========== -->
         <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
 
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle"></span>
-
-            <div class="about__container container">
-                <img src="assets/img/2.png" alt="" class="about__img">
-                <div class="about__data">
-                    <p class="about__description" id="user-detail-intro" style="text-align: left;">
+            <div class="about_container container grid">
+                <img src="assets/img/character_2.png" alt="" class="about_img home-img">
+                <div class="about_data">
+                    <p class="about_description" id="user-detail-intro">
                         Hello, my name is Avishek and I'm a full stack web developer with a strong understanding of
-                        frontend technologies, MVC frameworks, Restful APIs, and <br>database designing.<br><br>
+                        <b>frontend technologies, MVC frameworks, Restful APIs, Docker, AWS deployment and database designing.</b> <br>
                         Hands-on Experience developing scalable, secure, and real-world web application. Proficiency
-                        in Javascript and Node.js
+                        in Javascript, React.Js and Node.Js
                     </p>
-
-                    <div class="about__info">
+                    <div class="about_info">
                         <div>
-                            <span class="about__info-title">1400+</span>
-                            <span class="about__info-name">Hours of <br> Coding</span>
-                        </div>
-
-                        <div>
-                            <span class="about__info-title">700+</span>
-                            <span class="about__info-name">DSA <br> Problems </span>
+                            <span class="about_info-title">1200+</span>
+                            <span class="about_info-name">Hours of Coding</span>
                         </div>
                         <div>
-                            <span class="about__info-title">20+</span>
-                            <span class="about__info-name">Completed <br> Project</span>
+                            <span class="about_info-title">20+</span>
+                            <span class="about_info-name">Completed Projects</span>
                         </div>
-
+                        <div>
+                            <span class="about_info-title">700+</span>
+                            <span class="about_info-name">DSA Problems</span>
+                        </div>
                     </div>
 
                     <div class="about_buttons">
                         <button class="button" id="resume-button-2">
-                            <a href="assets/pdf/Avishek-Singh-Resume.pdf" class="button-flex" id="resume-link-2"
-                                onclick="window.open('assets/pdf/Avishek-Singh-Resume.pdf')" target="_blank" download>
+                            <a href="assets/pdf/Avishek-Singh-Resume.pdf" class="button-flex"
+                                id="resume-link-2"
+                                onclick="window.open('assets/pdf/Avishek-Singh-Resume.pdf')"
+                                target="_blank" download>
                                 My Resume <i class="uil uil-download-alt button_icon"></i>
                             </a>
                         </button>
                     </div>
                 </div>
             </div>
-        </section> <br><br>
 
-        <!--==================== Project ====================-->
+        </section>
 
+
+        <hr class="hr_break_line">
+
+
+        <!-- ========== Skills ========== -->
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Skills & Tools</h2>
+
+            <div class="skills_container container grid">
+                <div>
+                    <!-- ========== Skills 1 ========== -->
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="uil uil-server-network skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Backend Development</h1>
+                               
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Node.Js</h3>
+                                    <span><i class="bx bxl-nodejs skills-card-img"></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">MongoDB</h3>
+                                    <span><i class='bx bxl-mongodb skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">MySQL</h3>
+                                    <span><i class='bx bxs-data skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Express.Js</h3>
+                                    <span><i class='bx bxl-nodejs skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">AWS</h3>
+                                    <span><i class='bx bxl-aws skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Docker</h3>
+                                    <span><i class='bx bxl-docker skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Microservices</h3>
+                                    <span><i class='bx bxl-dropbox skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ========== Skills 2 ========== -->
+                    <div>
+                        <div class="skills_content skills_close">
+                            <div class="skills_header">
+                                <i class="uil uil-arrow skills_icon"></i>
+                                <div>
+                                    <h1 class="skills_title">Frontend Development</h1>
+
+                                </div>
+                                <i class="uil uil-angle-down skills_arrow"></i>
+                            </div>
+                            <div class="skills_list grid">
+
+                                <div class="skills_data skills-card">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name skills-card-name">HTML</h3>
+                                        <span><i class='bx bxl-html5 skills-card-img'></i></span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data skills-card">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name skills-card-name">CSS</h3>
+                                        <span><i class='bx bxl-css3 skills-card-img'></i></span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data skills-card">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name skills-card-name">JavaScript</h3>
+                                        <span><i class='bx bxl-javascript skills-card-img'></i></span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data skills-card">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name skills-card-name">React.Js</h3>
+                                        <span><i class='bx bxl-react skills-card-img'></i></span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data skills-card">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name skills-card-name">TypeScript</h3>
+                                        <span><i class='bx bxl-typescript skills-card-img'></i></span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data skills-card">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name skills-card-name">Bootstrap</h3>
+                                        <span><i class='bx bxl-bootstrap skills-card-img'></i></span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data skills-card">
+                                    <div class="skills_titles">
+                                        <h3 class="skills_name skills-card-name">Tailwind</h3>
+                                        <span><i class='bx bxl-tailwind-css skills-card-img'></i></span>
+                                    </div>
+                                    <div class="skills_bar">
+                                        <span class="skills_percentage"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- ========== Skills 3 ========== -->
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-bright skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Other Tech Tools</h1>
+
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Gen AI</h3>
+                                    <span><i class='bx bx-brain skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">VS Code</h3>
+                                    <span><i class='bx bxl-visual-studio skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Figma</h3>
+                                    <span><i class='bx bxl-figma skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">GitHub</h3>
+                                    <span><i class="uil uil-github-alt skills-card-img"></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">PostMan</h3>
+                                    <span><i class='bx bxs-pen skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ========== Skills 4 ========== -->
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-analysis skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Soft Skills</h1>
+
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Project Management</h3>
+                                    <span><i class='bx bxs-brain skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Team Working</h3>
+                                    <span><i class='bx bxs-brain skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Adaptability</h3>
+                                    <span><i class='bx bxs-brain skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Problem-Solving</h3>
+                                    <span><i class='bx bxs-brain skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <hr class="hr_break_line">
+
+
+        <!-- ========== Projects ========== -->
         <section class="portfolio section" id="projects">
             <h2 class="section_title">Projects</h2>
-            <span class="section_subtitle" id="kl">
-                <p>✍️ Hey visitor, here is a brief overview of some of my previous work...</p>
-            </span> <br>
-
-            <div class="portfolio_container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!-- ========== Project 1 ========== -->
-                    <div class="portfolio_content grid swiper-slide project-card">
-                        <img src="/images/travelworldapp.png" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title project_title project-title">Tour management application</h3>
-                            <p class="portfolio_description project-description">
-                                Travel World is a dynamic tour management web application that empowers users to embark
-                                on unforgettable journeys. With Travel World, users can effortlessly explore a myriad of
-                                tours, create personalized accounts, and share their valuable reviews for each unique
-                                adventure.
-                            </p>
-                            <p class="project-tech-stack"><b>Tech Stack : </b>React.js | NODE JS| EXPRESS | MongoDB |
-                                BOOTSTRAP | JAVASCRIPT</p>
-                            <a href="https://github.com/AviSingh017/Tour_Management_App" target="_blank"
-                                class="project-github-link button button-flex button-small portfolio_button">
-                                <i class="uil uil-github-alt button_icon"></i>
-                            </a>
-                            <a href="https://travelworldapp.netlify.app/" target="_blank"
-                                class="button button-flex button-small portfolio_button project-deployed-link">
-                                <i class="uil uil-external-link-alt button_icon"></i>
-                            </a>
-                        </div>
-                    </div>
+            <span class="section_subtitle">✍️ Hey visitor, here is a brief overview of some of my previous work...
+                ✍️</span>
 
 
-                    <!-- ========== Project 2 ========== -->
-                    <div class="portfolio_content grid swiper-slide project-card">
-                        <img src="/images/Chessly.png" alt="" class="portfolio_img">
+            <!-- ========== Project Section without Slider ========== -->
+            <div class="portfolio_container container">
 
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title project_title project-title">Real-time Multiplayer Chess</h3>
-                            <p class="portfolio_description project-description">
-                                A real-time multiplayer chess application with real-time video and chat supporting
-                                features built using webRTC and socket.io. It also includes login/signup using JWT
-                                bcrypt and Google OAuth.</p>
-                            <p class="project-tech-stack"><b>Tech Stack : </b>NODE JS| EXPRESS | MongoDB |
-                                OAuth | WEB SOCKETS | WEBRTC | HTML5 |
-                                CSS | JAVASCRIPT</p>
-                            <a href="https://github.com/AviSingh017/Chessmate" target="_blank"
-                                class="project-github-link button button-flex button-small portfolio_button">
-                                <i class="uil uil-github-alt button_icon"></i>
-                            </a>
-                            <a href="https://chessly.netlify.app/" target="_blank"
-                                class="button button-flex button-small portfolio_button project-deployed-link">
-                                <i class="uil uil-external-link-alt button_icon"></i>
-                            </a>
-                        </div>
-                    </div>
+                <div class="portfolio_content grid project-card">
+                    <img src="/assets/img/travelworldapp.png" alt="" class="portfolio_img">
 
-                    <!-- ========== Project 3 ========== -->
-                    <div class="portfolio_content grid swiper-slide project-card">
-                        <img src="/images/Quikr.png" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title project_title project-title">Quikr Bazaar - Clone</h3>
-                            <p class="portfolio_description project-description">
-                                The project is a Quikr clone, popular online marketplace platform. It includes features
-                                such as user registration, login, buying and selling products, and the ability to post
-                                ads to sell items. Additionally, an admin dashboard is implemented to manage the
-                                platform's operations.
-                            </p>
-                            <p class="project-tech-stack"><b>Tech Stack : </b>HTML5 | CSS | JAVASCRIPT | BOOTSTRAP |
-                                JSON SERVER
-                            </p>
-                            <a href="https://github.com/AviSingh017/Quikr-Bazaar-Clone" target="_blank"
-                                class="project-github-link button button-flex button-small portfolio_button">
-                                <i class="uil uil-github-alt button_icon"></i>
-                            </a>
-                            <a href="https://magenta-boba-64ed89.netlify.app/" target="_blank"
-                                class="button button-flex button-small portfolio_button project-deployed-link">
-                                <i class="uil uil-external-link-alt button_icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- ========== Project 4 ========== -->
-                    <div class="portfolio_content grid swiper-slide project-card">
-                        <img src="/images/Zapprel.png" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title project_title project-title">WT Mens Fashion - Clone</h3>
-                            <p class="portfolio_description project-description">
-                                This project focuses on replicating essential features such as user registration, login,
-                                and a user-friendly landing page showcasing products. Additionally, it includes an
-                                interactive add-to-cart page and a secure payment page for a seamless shopping
-                                experience.
-                            </p>
-                            <p class="project-tech-stack"><b>Tech Stack : </b>HTML5 | CSS | JAVASCRIPT | JSON SERVER |
-                                BOOTSTRAP</p>
-                            <a href="https://github.com/AviSingh017/WT-Mens-Fashion" target="_blank"
-                                class="project-github-link button button-flex button-small portfolio_button">
-                                <i class="uil uil-github-alt button_icon"></i>
-                            </a>
-                            <a href="https://elegant-kelpie-14b113.netlify.app/" target="_blank"
-                                class="button button-flex button-small portfolio_button project-deployed-link">
-                                <i class="uil uil-external-link-alt button_icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- ========== Project 5 ========== -->
-                    <div class="portfolio_content grid swiper-slide project-card">
-                        <img src="/images/SkinStore.png" alt="" class="portfolio_img">
-
-                        <div class="portfolio_data">
-                            <h3 class="portfolio_title project_title project-title">The SkinStore Clone</h3>
-                            <p class="portfolio_description project-description">
-                                The project is a Skinstore clone, inspired by the popular online beauty and skincare
-                                platform. It includes features such as user registration, login, and a visually
-                                appealing landing page showcasing a wide range of skincare products.
-                            </p>
-                            <p class="project-tech-stack"><b>Tech Stack : </b>HTML5 | CSS | JAVASCRIPT | BOOTSTRAP |
-                                JSON SERVER </p>
-                            <a href="https://github.com/AviSingh017/SkinStore-Clone" target="_blank"
-                                class="project-github-link button button-flex button-small portfolio_button">
-                                <i class="uil uil-github-alt button_icon"></i>
-                            </a>
-                            <a href="https://phenomenal-sfogliatella-eb6891.netlify.app/" target="_blank"
-                                class="button button-flex button-small portfolio_button project-deployed-link">
-                                <i class="uil uil-external-link-alt button_icon"></i>
-                            </a>
-                        </div>
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title project_title project-title">Tour management application</h3>
+                        <p class="portfolio_description project-description">Travel World is a dynamic tour management web application that empowers users to embark
+                            on unforgettable journeys. With Travel World, users can effortlessly explore a myriad of
+                            tours, create personalized accounts, and share their valuable reviews for each unique
+                            adventure.</p>
+                        <p class="project-tech-stack"><b>Tech Stack : </b>React.js | NODE JS| EXPRESS | MongoDB |
+                            BOOTSTRAP | JAVASCRIPT</p>
+                        <a href="https://github.com/AviSingh017/Tour_Management_App" target="_blank"
+                            class="project-github-link button button-flex button-small portfolio_button">
+                            Git Repo.
+                            <i class="uil uil-github-alt button_icon"></i>
+                        </a>
+                        <a href="https://travelworldapp.netlify.app/"
+                            target="_blank"
+                            class="button button-flex button-small portfolio_button project-deployed-link">
+                            Demo
+                            <i class="uil uil-external-link-alt button_icon"></i>
+                        </a>
                     </div>
                 </div>
+
+                
+
+                <div class="portfolio_content grid project-card">
+                    <img src="/assets/img/Chessly.png" alt="" class="portfolio_img">
+
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title project_title project-title">Real-time Multiplayer Chess</h3>
+                        <p class="portfolio_description project-description">A real-time multiplayer chess application with real-time video and chat supporting
+                            features built using webRTC and socket.io. It also includes login/signup using JWT
+                            bcrypt and Google OAuth.</p>
+                        <p class="project-tech-stack"><b>Tech Stack : </b>NODE JS| EXPRESS | MongoDB |
+                            OAuth | WEB SOCKETS | WEBRTC | HTML5 |
+                            CSS | JAVASCRIPT</p>
+                        <a href="https://github.com/AviSingh017/Chessmate" target="_blank"
+                            class="project-github-link button button-flex button-small portfolio_button">
+                            Git Repo.
+                            <i class="uil uil-github-alt button_icon"></i>
+                        </a>
+                        <a href="https://chessly.netlify.app/"
+                            target="_blank"
+                            class="button button-flex button-small portfolio_button project-deployed-link">
+                            Demo
+                            <i class="uil uil-external-link-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="portfolio_content grid project-card">
+                    <img src="/assets/img/Quikr.png" alt="" class="portfolio_img">
+
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title project_title project-title">Quikr Bazaar - Clone</h3>
+                        <p class="portfolio_description project-description"> The project is a Quikr clone, popular online marketplace platform. It includes features
+                            such as user registration, login, buying and selling products, and the ability to post
+                            ads to sell items. Additionally, an admin dashboard is implemented to manage the
+                            platform's operations.</p>
+                        <p class="project-tech-stack"><b>Tech Stack : </b>HTML5 | CSS | JAVASCRIPT | BOOTSTRAP |
+                            JSON SERVER</p>
+                        <a href="https://github.com/AviSingh017/Quikr-Bazaar-Clone" target="_blank"
+                            class="project-github-link button button-flex button-small portfolio_button">
+                            Git Repo.
+                            <i class="uil uil-github-alt button_icon"></i>
+                        </a>
+                        <a href="https://magenta-boba-64ed89.netlify.app/" target="_blank"
+                            class="button button-flex button-small portfolio_button project-deployed-link">
+                            Demo
+                            <i class="uil uil-external-link-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio_content grid project-card">
+                    <img src="/assets/img/Zapprel.png" alt="" class="portfolio_img">
+
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title project_title project-title">WT Mens Fashion - Clone</h3>
+                        <p class="portfolio_description project-description"> This project focuses on replicating essential features such as user registration, login,
+                            and a user-friendly landing page showcasing products. Additionally, it includes an
+                            interactive add-to-cart page and a secure payment page for a seamless shopping
+                            experience.</p>
+                        <p class="project-tech-stack"><b>Tech Stack : </b>HTML5 | CSS | JAVASCRIPT | BOOTSTRAP |
+                            JSON SERVER</p>
+                        <a href="https://github.com/AviSingh017/TshirtsHub" target="_blank"
+                            class="project-github-link button button-flex button-small portfolio_button">
+                            Git Repo.
+                            <i class="uil uil-github-alt button_icon"></i>
+                        </a>
+                        <a href="https://elegant-kelpie-14b113.netlify.app/" target="_blank"
+                            class="button button-flex button-small portfolio_button project-deployed-link">
+                            Demo
+                            <i class="uil uil-external-link-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
-        </section> <br>
+
+        </section>
 
 
-        <!-- ==================== SKILLS ====================== -->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2> <br>
-
-            <div class="skills__container container grid">
-                <div>
-                    <!-- frontend  development -->
-
-                    <div class="skills__content skills__close">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-                            <div>
-                                <h1 class="skills__title"> Frontend Development</h1>
-                            </div>
-                            <i class="uil uil-angle-down skills__arrow"></i>
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data skills-card ">
-                                <div class="skills__titles ">
-                                    <h3 class="skills__name skills-card-name">HTML</h3>
-                                    <span><i class="bx bxl-html5 skills-card-img"></i></span>
-                                </div>
-                                <div class="skills__bar">
-                                    <img class="skills-card-img fyouseek" src="" alt="">
-                                </div>
-                            </div>
-
-                            <div class="skills__data skills-card">
-                                <div class="skills__titles ">
-                                    <h3 class="skills__name skills-card-name">CSS / Tailwind CSS</h3>
-                                    <span><i class="bx bxl-css3 skills-card-img"></i></span>
-                                </div>
-                                <div class="skills__bar">
-                                    <img class="skills-card-img fyouseek" src="" alt="">
-                                </div>
-                            </div>
-
-                            <div class="skills__data skills-card">
-                                <div class="skills__titles ">
-                                    <h3 class="skills__name skills-card-name">JavaScript</h3>
-                                    <span><i class="bx bxl-javascript skills-card-img"></i></span>
-                                </div>
-                                <div class="skills__bar">
-                                    <img class="skills-card-img fyouseek" src="" alt="">
-                                </div>
-                            </div>
-
-                            <div class="skills__data skills-card">
-                                <div class="skills__titles ">
-                                    <h3 class="skills__name skills-card-name">React Js</h3>
-                                    <span><i class="bx bxl-react skills-card-img"></i></span>
-                                </div>
-                                <div class="skills__bar">
-                                    <img class="skills-card-img fyouseek" src="" alt="">
-                                </div>
-                            </div>
-
-                            <div class="skills__data skills-card">
-                                <div class="skills__titles ">
-                                    <h3 class="skills__name skills-card-name">Boostrap</h3>
-                                    <span><i class="bx bxl-bootstrap skills-card-img"></i></span>
-                                </div>
-                                <div class="skills__bar">
-                                    <img class="skills-card-img fyouseek" src="" alt="">
-                                </div>
-                            </div>
+        <hr class="hr_break_line">
 
 
-                        </div>
-                    </div>
-                </div>
-                <!-- Backend -->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-cloud-database-tree skills__icon"></i>
-                        <div>
-                            <h1 class="skills__title"> Backend Development</h1>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">Node Js</h3>
-                                <span><i class="bx bxl-nodejs skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">Express Js</h3>
-                                <span><i class="bx bxl-nodejs skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">MongoDB</h3>
-                                <span><i class="bx bxl-mongodb skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">MySQL</h3>
-                                <span><i class="bx bxs-data skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">AWS</h3>
-                                <span><i class="bx bxl-aws skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">Sequelize</h3>
-                                <span><i class="bx bxs-data skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">Rest APIs</h3>
-                                <span><i class="bx bxs-zap skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tools -->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-arrow skills__icon"></i>
-                        <div>
-                            <h1 class="skills__title">Tools </h1>
-                        </div>
-
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__list grid">
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">VS-Code | Codepan | Replit</h3>
-                                <span><i class="bx bxl-visual-studio skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">Netlify | Vercel | Render</h3>
-                                <span><i class="bx bxl-netlify skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">Git & Github</h3>
-                                <span><i class="bx bxl-github skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">Postman</h3>
-                                <span><i class="bx bxs-pen skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-
-                            </div>
-                        </div>
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">Figma</h3>
-                                <span><i class="bx bxl-figma skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- softskills -->
-                <div class="skills__content skills__close">
-                    <div class="skills__header">
-                        <i class="uil uil-analysis skills__icon"></i>
-                        <div>
-                            <h1 class="skills__title"> Soft Skills</h1>
-                        </div>
-                        <i class="uil uil-angle-down skills__arrow"></i>
-                    </div>
-
-                    <div class="skills__list grid">
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">Project Management</h3>
-                                <span><i class="bx bxs-brain skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">Team Collaborations</h3>
-                                <span><i class="bx bxs-user-plus skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">Problem-Solving</h3>
-                                <span><i class="bx bxs-brain skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-                        <div class="skills__data skills-card">
-                            <div class="skills__titles ">
-                                <h3 class="skills__name skills-card-name">Adaptability</h3>
-                                <span><i class="bx bxs-brain skills-card-img"></i></span>
-                            </div>
-                            <div class="skills__bar">
-                                <img class="skills-card-img fyouseek" src="" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- ========== Statistics ========== -->
+        <section class="statistics section" id="statistics">
+            <h2 class="section_title">Statistics</h2>
+            <span class="section_subtitle">My Github Statistics</span>
+            <div class="statistics_container container grid">
+                <img id="github-stats-card"
+                    src="https://github-readme-stats-sigma-five.vercel.app/api?username=avisingh017&theme=city_light&hide_border=false&include_all_commits=false&count_private=true"
+                    alt="github-stats-card">
+                <img id="github-top-langs"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=avisingh017&show_icons=true&locale=en&layout=compact&theme=city_light&hide_border=true"
+                    alt="github-top-langs">
+                <img id="github-streak-stats"
+                    src="https://github-readme-streak-stats.herokuapp.com/?user=avisingh017&ring=5094f0&currStreakLabel=5094f0&fire=5094f0&theme=city_light&hide_border=true"
+                    alt="github-streak-stats">
             </div>
-        </section> <br>
-
-        <!--==================== GITHUB STATES ====================-->
-
-        <!-- <section class="about section container react-activity-calendar" id="github">
-            <h2 class="section__title">Github contributions in the last year</h2>
-            <div class="react-activity-calendar calendar"> -->
-        <!-- Loading stuff -->
-        <!-- </div>
-        </section> -->
-
-        <!--==================== Github actitvities ====================-->
-
-        <section class="portfolio section githubstates " id="githubstates">
-            <h2 class="section__title">GitHub Activities</h2> <br>
-
-
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper github-images">
-
-                    <img id="github-streak-stats" class="portfolio__content grid swiper-slide"
-                        src="https://github-readme-streak-stats.herokuapp.com?user=avisingh017&theme=github-dark&hide_border=true&date_format=j%20M%5B%20Y%5D" />
-
-
-                    <img id="github-top-langs" class="portfolio__content grid swiper-slide"
-                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=avisingh017&show_icons=true&locale=en&layout=compact&theme=github_dark&hide_border=true"
-                        alt="ovi" />
-
-                    <img id="github-stats-card" class="portfolio__content grid swiper-slide"
-                        src="https://github-readme-stats.vercel.app/api?username=avisingh017&show_icons=true&locale=en&theme=github_dark&hide_border=true"
-                        alt="ovi" />
-
-                    <img class="portfolio__content grid swiper-slide"
-                        src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=avisingh017&theme=github_dark" />
-                </div>
-
-                <!-- Add Arrows -->
-                <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                </div>
-
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+            <span class="section_subtitle">Github contribution</span>
+            <div class="react-activity-calendar calendar">
+                <!-- Loading stuff -->
+                <img id="github-streak-stats"
+                    src="https://github-readme-activity-graph.vercel.app/graph?username=avisingh017&theme=city_light&hide_border=true"
+                    alt="github-streak-stats">
             </div>
-        </section> <br><br>
+        </section>
 
-        <!--==================== CONTACT ME ====================-->
+
+        <hr class="hr_break_line">
+
+
+        <!-- ========== Contact ========== -->
         <section class="contact section" id="contact">
-            <h2 class="section__title">Contact</h2><br>
-            <a style="display:none;" target="_blank" id="contact-email">
-                <p><i class="fa fa-envelope"></i>singh03.avishek@gmail.com</p>
-            </a>
-            <div class="contact__container container grid">
+            <h2 class="section_title">Contact Me</h2>
+
+            <div class="contact_container container grid">
                 <div>
+                    <p class="contact_message">Feel free to drop a message if you have any suggestions or collaboration
+                        ideas, and we'll get in touch.</p>
+                    <div class="contact_information">
+                        <i class="uil uil-phone-alt contact_icon"></i>
 
-
-                    <div class="contact__information">
-                        <a href="https://github.com/avisingh017" target="_blank"><i
-                                class="uil uil-github contact__icon"></i></a>
                         <div>
-                            <h3 class="contact__title">GitHub</h3>
-                            <a id="contact-github" href="https://github.com/avisingh017" target="_blank"><span
-                                    class="contact__subtitle">@avisingh017</span></a>
+                            <h3 class="contact_title">Call Me</h3>
+                            <span class="contact_subtitle">+91 8617064590</span>
                         </div>
                     </div>
 
+                    <div class="contact_information">
+                        <i class="uil uil-envelope-alt contact_icon"></i>
 
-                    <div class="contact__information">
-                        <a id="contact-linkedin" href="https://www.linkedin.com/in/avishek-singh-007/"
-                            target="_blank"><i class="uil uil-phone-alt contact__icon"></i></a>
                         <div>
-                            <h3 class="contact__title">Call Me</h3>
-                            <a href="#" target="_blank"><span class="contact__subtitle">+91 8617064590</span></a>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">singh03.avishek@gmail.com</span>
                         </div>
                     </div>
 
-                    <div class="contact__information">
-                        <a id="contact-linkedin" href="https://www.linkedin.com/in/avishek-singh-007/"
-                            target="_blank"><i class="uil uil-linkedin contact__icon"></i></a>
+                    <div class="contact_information">
+                        <i class="uil uil-location-pin-alt contact_icon"></i>
+
                         <div>
-                            <h3 class="contact__title">LinkedIn</h3>
-                            <a href="https://www.linkedin.com/in/avishek-singh-007/" target="_blank"><span
-                                    class="contact__subtitle">www.linkedin.com/in/avishek-singh-007/</span></a>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">Asansol, West Bengal</span>
                         </div>
                     </div>
 
-
-                    <div class="contact__information">
-                        <a id="contact-email" href="mailto:singh03.avishek@gmail.com"><i
-                                class="uil uil-envelope-alt contact__icon"></i></a>
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <a href="mailto:singh03.avishek@gmail.com"><span
-                                    class="contact__subtitle">singh03.avishek@gmail.com</span></a>
-
-                        </div>
-                    </div>
-                    <div class="contact__information">
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <i class="uil uil-instagram contact__icon"></i></a>
+                    <div class="contact_information">
+                        <i class="uil uil-linkedin-alt contact_icon"></i>
 
                         <div>
-                            <h3 id="contact-phone" class="contact__title">Instagram</h3>
-                            <a href="https://www.instagram.com/" target="_blank"><span
-                                    class="contact__subtitle">@avishek.singh.star</span></a>
-                        </div>
-                    </div>
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__subtitle">Kolkata/Asansol, West Bengal</span>
+                            <h3 class="contact_title">LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/avishek-singh-007/" target="_blank">
+                                <span class="contact_subtitle">www.linkedin.com/in/avishek-singh-007/</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <form action="https://formspree.io/f/mgebgjwk" method="post" class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="name" class="contact__label">Name</label>
-                            <input name="name" type="text" class="contact__input">
+                <form action="https://formspree.io/f/mqkvygod" method="post" class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="name" class="contact_label">Name</label>
+                            <input name="name" type="text" class="contact_input">
                         </div>
-
-                        <div class="contact__content">
-                            <label for="project" class="contact__label">Email</label>
-                            <input name="project" type="email" class="contact__input">
+                        <div class="contact_content">
+                            <label for="email" class="contact_label">Email</label>
+                            <input name="email" type="email" class="contact_input" required>
                         </div>
                     </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Project</label>
-                        <input type="text" class="contact__input">
+                    <div class="contact_content">
+                        <label for="project" class="contact_label">Project</label>
+                        <input name="project" type="text" class="contact_input">
                     </div>
-                    <div class="contact__content">
-                        <label for="message" class="contact__label">Message</label>
-                        <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    <div class="contact_content">
+                        <label for="message" class="contact_label">Message</label>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact_input"></textarea>
                     </div>
                     <div>
                         <button class="button button-flex" type="submit">Send Message
@@ -757,145 +728,151 @@
             </div>
         </section>
 
+
+        <hr class="hr_break_line">
+
+
+
     </main>
 
-    <!--==================== FOOTER ====================-->
+
+    <!-- ========== FOOTER ========== -->
     <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
+        <div class="footer_bg">
+            <img src="assets/img/character.png" alt="">
+            <div>
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">Avishek Singh</h1>
+                        <span class="footer_subtitle">Full Stack Web Developer</span>
+                    </div>
+                    <div class="footer_socials">
+                        <a href="https://github.com/avisingh017" target="_blank" class="footer_social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/avishek-singh-007/" target="_blank" class="footer_social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://twitter.com/Avishek_Singh17" target="_blank" class="footer_social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
+                </div>
                 <div>
-                    <span class="footer__title">Avishek Singh</span> <br>
-                    <span class="footer__subtitle">Full Stack Web Developer</span>
+                    <p class="footer_copy">Made with ❤️ by &#169; Avishek Singh</p>
+                    <p class="footer_copy">Inspired by <a
+                            href="https://github.com/bedimcode/responsive-portfolio-website-Alexa"
+                            target="_blank">@Bedimcode</a> | All rights reserved | 2023</p>
                 </div>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#home" class="footer__link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about" class="footer__link">About</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
-                    </li>
-                </ul>
-
-                <div class="footer__socials">
-                    <a href="https://www.linkedin.com/in/avishek-singh-007/" target="_blank" class="footer__social">
-                        <i class="uil uil-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/avisingh017 " target="_blank" class="footer__social">
-                        <i class="uil uil-github"></i>
-                    </a>
-                </div>
-
             </div>
-            <p class="footer__copy">
-                Made with <span style="color: #e25555;">&hearts;</span> by
-                Avishek Singh <br>
-            </p>
         </div>
     </footer>
 
-    <!--==================== SCROLL TOP ====================-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="uil uil-arrow-up scrollup__icon"></i>
+
+    <!-- ========== SCROLL TOP ========== -->
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
     </a>
+
+
+    <!-- ==================== JAVASCRIPT LINKED FILES ==================== -->
+    <script src="/script/script.js"></script>
+    <script src="/script/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ==================== AUTO-TYPE SCRIPT ==================== -->
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Full Stack Web Developer", "Node.js Backend Developer"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+        });
+    </script>
+
+    <!-- ==================== PROJECT SLIDER ==================== -->
+    <script>
+        let swiperPortfolio = new Swiper('.swiper-container', {
+            cssMode: true,
+            loop: true,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <!-- ==================== GITHUB CALENDER ==================== -->
+    <script>
+        // or enable responsive functionality
+        GitHubCalendar(".calendar", "amanastel", {
+            responsive: true,
+            global_stats: true,
+            tooltips: true,
+        });
+    </script>
+
+    <!-- ==================== SCROLL REVEAL ANIMATION ==================== -->
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            // reset: true
+        })
+
+        // sr.reveal('.nav', {});
+        //sr.reveal('.nav_list>li', { interval: 100 });
+
+        sr.reveal('.home_data', { delay: 200 });
+        sr.reveal('.home_img', { delay: 200 });
+        sr.reveal('.home_social', { delay: 200 });
+        sr.reveal('.home_social-icon', { interval: 100 });
+        sr.reveal('.home_scroll', { delay: 200 });
+
+        sr.reveal('.about_img', { delay: 200 });
+        sr.reveal('.about_data', { delay: 200 });
+        sr.reveal('.about_info', { interval: 200 });
+        sr.reveal('.about_buttons', { interval: 100 });
+
+        // sr.reveal('.skills_container', {});
+        // sr.reveal('.skills_content', { delay: 100 });
+        // sr.reveal('.skills_header', { interval: 100 });
+
+        // sr.reveal('.section_subtitle', { delay: 100 });
+        // sr.reveal('.portfolio_container', { delay: 100 });
+
+        // sr.reveal('.statistics_container>img', { interval: 100 });
+        // sr.reveal('.calendar', { delay: 100 });
+
+        // sr.reveal('.contact_container', {});
+        // sr.reveal('.contact_information', { interval: 100 });
+        // sr.reveal('form>div', { interval: 100 });
+
+        // sr.reveal('.footer', {});
+        // sr.reveal('.footer_container>div', { interval: 100 });
+    </script>
+
 </body>
-
-
-<script src="https://unpkg.com/scrollreveal"></script>
-<!--==================== GITHUB STATES LIBRARY ====================-->
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-<script>GitHubCalendar(".Github-calendar", "avisingh017", { responsive: true });</script>
-
-<!--==================== SWIPER JS ====================-->
-<script src="js/swiper-bundle.min.js"></script>
-
-<!--==================== MAIN JS ====================-->
-<script src="js/main.js"></script>
-<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<script>
-    // or enable responsive functionality
-    GitHubCalendar(".calendar", "avisingh017", {
-        responsive: true,
-        global_stats: true,
-        tooltips: true,
-    });
-</script>
-
-<!-- ==================== SCROLL REVEAL ANIMATION ==================== -->
-<script>
-    const sr = ScrollReveal({
-        origin: 'top',
-        distance: '50px',
-        duration: 2000,
-        // reset: true
-    })
-
-    // sr.reveal('.nav', {});
-    //sr.reveal('.nav_list>li', { interval: 100 });
-
-    sr.reveal('.home_data', { delay: 200 });
-    sr.reveal('.home_img', { delay: 200 });
-    sr.reveal('.home_social', { delay: 200 });
-    sr.reveal('.home_social-icon', { interval: 100 });
-    sr.reveal('.home_scroll', { delay: 200 });
-
-    sr.reveal('.about_img', { delay: 200 });
-    sr.reveal('.about_data', { delay: 200 });
-    sr.reveal('.about_info', { interval: 200 });
-    sr.reveal('.about_buttons', { interval: 100 });
-    sr.reveal('.qualification', { delay: 200 });
-
-    sr.reveal('.skills_container', {});
-    sr.reveal('.skills_content', { delay: 200 });
-    sr.reveal('.skills_header', { interval: 100 });
-
-    sr.reveal('.section_subtitle', { delay: 200 });
-    sr.reveal('.portfolio_container', { delay: 200 });
-
-    sr.reveal('.statistics_container>img', { interval: 100 });
-    sr.reveal('.calendar', { delay: 200 });
-
-    sr.reveal('.contact_container', {});
-    sr.reveal('.contact_information', { interval: 100 });
-    sr.reveal('form>div', { interval: 200 });
-
-    sr.reveal('.footer', {});
-    sr.reveal('.footer_container>div', { interval: 100 });
-</script>
-
-<!-- ==================== PROJECT SLIDER ==================== -->
-<script>
-    let swiperPortfolio = new Swiper('.swiper-container', {
-        cssMode: true,
-        loop: true,
-
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        keyboard: true,
-    });
-
-    var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
-        slidesPerView: 1,
-        spaceBetween: 30,
-        mousewheel: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-</script>
 
 </html>
